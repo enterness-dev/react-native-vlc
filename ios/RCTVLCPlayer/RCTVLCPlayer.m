@@ -30,15 +30,15 @@ static NSString *const playbackRate = @"rate";
     if ((self = [super init])) {
         _eventDispatcher = eventDispatcher;
         
-        [[NSNotificationCenter defaultCenter] addObserver:self
-                                                 selector:@selector(applicationWillResignActive:)
-                                                     name:UIApplicationWillResignActiveNotification
-                                                   object:nil];
+        // [[NSNotificationCenter defaultCenter] addObserver:self
+        //                                          selector:@selector(applicationWillResignActive:)
+        //                                              name:UIApplicationWillResignActiveNotification
+        //                                            object:nil];
         
-        [[NSNotificationCenter defaultCenter] addObserver:self
-                                                 selector:@selector(applicationWillEnterForeground:)
-                                                     name:UIApplicationWillEnterForegroundNotification
-                                                   object:nil];
+        // [[NSNotificationCenter defaultCenter] addObserver:self
+        //                                          selector:@selector(applicationWillEnterForeground:)
+        //                                              name:UIApplicationWillEnterForegroundNotification
+        //                                            object:nil];
         
     }
     
